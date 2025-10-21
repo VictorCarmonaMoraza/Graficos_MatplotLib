@@ -1,14 +1,25 @@
 import matplotlib.pyplot as plt  # Importamos la librería matplotlib.pyplot, usada para crear gráficos en Python
 
-# Data
-categories = ["A", "B", "C", "D"]
-values = [10, 20, 15, 30]
+# -------------------------------
+# Datos del gráfico
+# -------------------------------
+x = [1, 2, 3, 4, 5]               # Lista con los valores del eje X (variable independiente)
+y = [2.5, 3.7, 4.6, 8.0, 10.5]    # Lista con los valores del eje Y (variable dependiente)
 
-plt.bar(categories, values,
-        color='skyblue',  # Color de relleno
-        edgecolor='black',  # Color del borde
-        linewidth=1.5)  # Grosor del borde
-plt.title("Bar Chart")
-plt.xlabel("Categories")
-plt.ylabel("Values")
-plt.show()
+# -------------------------------
+# Creación del gráfico de dispersión
+# -------------------------------
+plt.scatter(x, y, color="red")    # Dibuja un gráfico de dispersión con puntos (x, y)
+                                  # 'color' define el color de los puntos
+
+# -------------------------------
+# Personalización del gráfico
+# -------------------------------
+plt.title("Scatter Plot")         # Título del gráfico
+plt.xlabel("Eje X")               # Etiqueta para el eje X
+plt.ylabel("Eje Y")               # Etiqueta para el eje Y
+
+# -------------------------------
+# Mostrar el gráfico en pantalla
+# -------------------------------
+plt.show()                        # Muestra la ventana con el gráfico generado
